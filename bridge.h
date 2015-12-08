@@ -14,6 +14,5 @@
 
 #endif /* bridge_h */
 
-#import "/Users/rkoscica/Desktop/Code12/Photo Search Example/AFNetworking/AFNetworking.h"
 
 #import "AFNetworking/AFNetworking.h"

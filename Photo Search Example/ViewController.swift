@@ -11,12 +11,11 @@
 
 import UIKit
 
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let manager = AFHTTPRequestOperation()
+        let manager = AFHTTPRequestOperationManager()
         manager.GET( "https://api.instagram.com/v1/tags/cats/media/recent?client_id=d0a70d0738474a27b6259a6ff0c82475",
             parameters: nil,
             success: { (operation: AFHTTPRequestOperation?,responseObject: AnyObject!) in

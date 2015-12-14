@@ -23,6 +23,7 @@
 		D11620231C171BAF008A1367 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11620211C171BAF008A1367 /* LaunchScreen.storyboard */; };
 		D116202E1C171BAF008A1367 /* Photo_Search_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D116202D1C171BAF008A1367 /* Photo_Search_ExampleTests.swift */; };
 		D11620391C171BB0008A1367 /* Photo_Search_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11620381C171BB0008A1367 /* Photo_Search_ExampleUITests.swift */; };
+		D1D5FAA91C19E8B800C359F8 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5FAA81C19E8B800C359F8 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		D11620381C171BB0008A1367 /* Photo_Search_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_Search_ExampleUITests.swift; sourceTree = "<group>"; };
 		D116203A1C171BB0008A1367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D116218B1C171FC0008A1367 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		D1D5FAA81C19E8B800C359F8 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				D116201F1C171BAF008A1367 /* Assets.xcassets */,
 				D11620211C171BAF008A1367 /* LaunchScreen.storyboard */,
 				D11620241C171BAF008A1367 /* Info.plist */,
+				D1D5FAA81C19E8B800C359F8 /* SwiftyJSON.swift */,
 			);
 			path = "Photo Search Example";
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				D10A83771C172E0900863E6C /* AFURLRequestSerialization.m in Sources */,
 				D10A83761C172E0900863E6C /* AFURLConnectionOperation.m in Sources */,
 				D10A83751C172E0900863E6C /* AFSecurityPolicy.m in Sources */,
+				D1D5FAA91C19E8B800C359F8 /* SwiftyJSON.swift in Sources */,
 				D10A83711C172E0900863E6C /* AFHTTPRequestOperation.m in Sources */,
 				D10A83791C172E0900863E6C /* AFURLSessionManager.m in Sources */,
 				D10A83781C172E0900863E6C /* AFURLResponseSerialization.m in Sources */,

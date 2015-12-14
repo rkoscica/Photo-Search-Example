@@ -19,16 +19,25 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         let manager = AFHTTPSessionManager()
-        manager.GET("https://api.instagram.com/v1/tags/clararockmore/media/recent?client_id=c4fc61c4704949baab8825cf178e13fe", parameters: nil, success: { (task: NSURLSessionDataTask, responseObject: AnyObject?) -> Void in
+        manager.GET("https://api.instagram.com/v1/tags/clararockmore/media/recent?client_id=c4fc61c4704949baab8825cf178e13fe", parameters: nil,
+            success: {  (task: NSURLSessionDataTask, responseObject: AnyObject?) -> Void in
                 print("JSON: " + responseObject!.description)
+                
+                if let dataArray = responseObject!["data"] as? [AnyObject] {
+                    var urlArray:[String] = []
+                    for dataObject in dataArray {
+                        if let imageURLString = dataObject.valueForKeyPath("images.standard_resolution.url") as? String {
+                            urlArray.append(imageURLString)
+                        }
+                    }
+                    print(urlArray)
+                }
             
             }) { (task: NSURLSessionDataTask?, error: NSError) -> Void in
                 print("Error: " + error.localizedDescription)
-            
+           
         }
      
-        
-        
     }
 
     override func didReceiveMemoryWarning() {

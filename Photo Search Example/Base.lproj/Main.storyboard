@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,15 +18,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XU9-5A-bVz">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="41" width="320" height="527"/>
                             </scrollView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Grc-Sc-b26">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="RA5-69-kVn"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XU9-5A-bVz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6X6-E1-mpg"/>
+                            <constraint firstItem="Grc-Sc-b26" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="3NK-wU-Xun"/>
                             <constraint firstItem="XU9-5A-bVz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="790-Xv-fX6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Grc-Sc-b26" secondAttribute="bottom" constant="524" id="FaH-bO-Btl"/>
                             <constraint firstAttribute="trailing" secondItem="XU9-5A-bVz" secondAttribute="trailing" id="MA9-df-5Ie"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XU9-5A-bVz" secondAttribute="bottom" id="duC-om-LIO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Grc-Sc-b26" secondAttribute="trailing" constant="-20" id="oS4-hw-Hc8"/>
+                            <constraint firstItem="XU9-5A-bVz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="vio-3m-eID"/>
+                            <constraint firstItem="Grc-Sc-b26" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="x06-Yg-e43"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
